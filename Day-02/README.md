@@ -207,8 +207,7 @@ Synthwave and Anything by our man Rick Astley
 living in the amazing
 Edge of reality
 ```
-```
 
-My Solution:
+### My Solution:
 
 ![My Solution](image.png)
