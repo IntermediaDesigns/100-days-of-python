@@ -172,6 +172,9 @@ I'll be using Replit, an amazing online IDE so I can do this from my phone where
 
 Run your program.
 
+![My Solution](image.png)
+
+
 ### Solution (No peeking!)
 
 ```python
