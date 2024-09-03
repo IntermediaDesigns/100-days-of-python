@@ -8,7 +8,7 @@ In this course, you will build games, apps, and websites by mastering Python pro
 Build a solid foundation and learn about the building blocks of modern technology.
 
 ### Python
-Become a master of one of the most popular and in-demand coding languages. [Learn more about Python](#)
+Become a master of one of the most popular and in-demand coding languages. [Learn more about Python](https://replit.com/learn/100-days-of-python?from=hub)
 
 ### How to build things
 Jump right into building fun and useful projects. Build a strong portfolio of work that you’re proud of!
