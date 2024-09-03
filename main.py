@@ -4,7 +4,7 @@ if movie.lower() == "the godfather":
   director = input("Who directed The Godfather? ")
   if director.lower() == "francis ford coppola":
     print("Correct! You're a true superfan of The Godfather!")
-  else: 
+  else:
     print("Sorry, that's not correct. Better luck next time!")
 
 elif movie.lower() == "pulp fiction":
@@ -20,3 +20,6 @@ elif movie.lower() == "the dark knight":
     print("Correct! You're a true superfan of The Dark Knight!")
   else:
     print("Sorry, that's not correct. Better luck next time!")
+
+else:
+  print("Sorry, I don't know that movie. Better luck next time!")
