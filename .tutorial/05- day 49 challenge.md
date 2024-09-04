@@ -1,0 +1,35 @@
+# 👉 Day 49 Challenge
+
+In yesterday's challenge, you created a file called high.score and stored some high scores in it.
+
+We've added a version of that file to this repl.
+
+Your program should:
+
+1. Read in the data from the high.score file.
+2. Identify which of those users had the highest score.  Automatically! (Not you doing it!)
+3. Output the name and score of the winner.
+
+
+Example:
+
+```
+🌟Current Leader🌟
+
+Analyzing high scores......
+
+Current leader is DJM 898,000
+```
+
+<details> <summary> 💡 Hints </summary>
+  
+- Read each element one at a time.
+- Split each element into two pieces.
+- You'll have to cast one element as an integer to make it a number.
+- Think back to list indexing to access the second index for the score.
+- Use a *max_score* list to store the details of the high scorer (starting with line 1 from the file, overwrite the details if the current line has a higher score). 
+
+
+
+
+</details>
