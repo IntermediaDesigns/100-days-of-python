@@ -1,0 +1,1 @@
+[['Lynjai', 3, 'L', 'LLL'], ['lynjai', 3, 'l', 'llllllllllllllllllllllllllllllllllllllllll'], ['lynjai', 3, 'l', 'llllllllllllllllllllllllllllllllllllllllll'], ['lynjai', 4, 'm', 12.0], ['lynjai', 5, 's', 10], ['lynjai', 6, 's', 10], ['lynjai', 6, 's', 60], ['python', 3, 'lg', 42], ['Lynjai', 6, 'm', 72], ['Python', 12, 'sm', 120], ['Bob', 8, 'large', 112]]
