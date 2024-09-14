@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.home-link {
+  margin-top: 20px;
+}
+
+.home-link a {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.home-link a:hover {
+  color: #f39c12;
+}
+
+ol li a {
+  line-height: 1.6em;
+  font-weight: bold;
+}
+
+ol li a:hover {
+  color: #f39c12;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="/static/{{ theme }}.css">
+</head>
+<body>
+    <h1>{{heading}}</h1>
+    <p><em>{{date}}</em></p>
+    <div>
+        {{content}}
+    </div>
+    {% if blog_links %}
+        {% if blog_links|length > 1 %}
+            <h2>Blog Posts:</h2>
+            <ol>
+                {% for link in blog_links %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+            </ol>
+        {% else %}
+            <div class="home-link">
+                <a href="{{ blog_links[0].url }}">{{ blog_links[0].title }}</a>
+            </div>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
