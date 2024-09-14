@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day {{ day }} of 100 Days of Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Day {{ day }} of 100 Days of Code</h1>
+    <p>Repl link: <a href="{{ repl_link }}" target="_blank">{{ repl_link }}</a></p>
+    <div class="reflection">
+        <h2>Reflection:</h2>
+        <p>{{ reflection }}</p>
+    </div>
+</body>
+</html>
