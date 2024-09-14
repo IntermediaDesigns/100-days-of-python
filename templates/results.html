@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs from {{year}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Songs from {{year}}</h1>
+    {% for song in songs %}
+        <div class="song">
+            <h3>{{song.name}} by {{song.artist}}</h3>
+            {% if song.preview_url %}
+                <audio controls>
+                    <source src="{{song.preview_url}}" type="audio/mpeg">
+                </audio>
+            {% else %}
+                <p class="no-preview">No preview available</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    <div class="navigation">
+        <a href="{{ url_for('search', year=year, offset=offset+10) }}">Next 10 songs</a>
+        <a href="{{ url_for('index') }}">Back to search</a>
+    </div>
+</body>
+</html>

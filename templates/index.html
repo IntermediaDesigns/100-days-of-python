@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Year Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Search for Songs by Year</h1>
+    <form action="{{ url_for('search') }}" method="GET">
+        <input type="number" name="year" placeholder="Enter a year" required>
+        <input type="hidden" name="offset" value="0">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
