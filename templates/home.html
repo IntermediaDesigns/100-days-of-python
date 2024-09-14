@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Community Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Community Chat</h1>
+        {% if logged_in %}
+            <p>Hello, {{ username }}!</p>
+            <div class="button-container">
+                <a href="{{ url_for('chat') }}" class="btn btn-primary">Go to Chat</a>
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+            </div>
+            <p><small>Note: This will only log you out of the chat application. You will remain logged into your Replit account.</small></p>
+        {% else %}
+            <p>Please log in to access the chat.</p>
+            <div class="button-container">
+                <button class="login-btn" onclick="window.location.href='https://repl.it/auth_with_repl_site?domain=' + location.host">Login with Replit</button>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
