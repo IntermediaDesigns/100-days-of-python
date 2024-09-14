@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Access Denied</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background-color: red;
+            color: yellow;
+            font-family: Comic Sans MS, cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Access Denied!</h1>
+    <p>You are not authorized to access this page. Go sit on the naughty step!</p>
+    <a href="{{ url_for('index') }}">Try again</a>
+</body>
+</html>
