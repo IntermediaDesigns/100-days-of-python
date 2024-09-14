@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oops!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Oops!</h2>
+        <p>Something went wrong.  Please try again.</p>
+        <img src="static/nerdy.gif" height="100"> 
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = '/login';
+        }, 3000); 
+    </script>
+</body>
+</html>

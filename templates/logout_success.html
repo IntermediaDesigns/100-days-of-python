@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Logout Successful!</h2>
+        <p>You have successfully logged out.</p>
+        <p>You will be redirected to the login page in a few seconds.</p>
+        <img src="{{ url_for('static', filename='yup.gif') }}" height="100">
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = '/login';
+        }, 3000); 
+    </script>
+</body>
+</html>
