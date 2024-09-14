@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block content %}
+    <h2>Admin Panel</h2>
+    <h3>Add New Post</h3>
+    <form action="{{ url_for('add_post') }}" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+        <button type="submit">Add Post</button>
+    </form>
+    <h3>Existing Posts</h3>
+    {% for post_id, post in posts %}
+        <article>
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.content }}</p>
+            <small>Posted on: {{ post.timestamp }}</small>
+        </article>
+    {% endfor %}
+{% endblock %}
