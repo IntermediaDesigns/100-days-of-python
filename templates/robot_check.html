@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm not a robot</title>
+</head>
+<body>
+    <h1>I'm not a robot check</h1>
+    <form action="{{ url_for('check') }}" method="post">
+        <p>
+            Are you made of metal?<br>
+            <input type="radio" id="metal_yes" name="metal" value="yes" required>
+            <label for="metal_yes">Yes</label>
+            <input type="radio" id="metal_no" name="metal" value="no" required>
+            <label for="metal_no">No</label>
+        </p>
+        <p>
+            What do you dream of being when you grow up?<br>
+            <select name="dream" required>
+                <option value="">--Please choose an option--</option>
+                <option value="human">A real human</option>
+                <option value="ed209">ED-209</option>
+                <option value="terminator">The Terminator</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <p>
+            What's your favorite law of robotics? (free text)<br>
+            <input type="text" name="favorite_law" required>
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
