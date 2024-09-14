@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Linktree{% endblock %}
+
+{% block body_class %}linktree-background{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/linktree_style.css') }}">
+    <style>
+        body {
+            background-image:  url("{{ url_for('static', filename='images/bkg1.jpg') }}");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+  <div class="link-tree-container">
+    <!-- Content container -->
+    <div class="container">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='images/aime3.png') }}" alt="Lynjai">
+      </div>
+      <div class="content-info">
+        <h1>Hello, I'm Lynjai Jimenez!</h1>
+      </div>
+      <div class="links-container">
+        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/facebook-96-2.png') }}" alt="facebook" /></a>
+        <br>
+        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/instagram.gif') }}" alt="instagram" id="gif" /></a>
+        <br>
+        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/twitterx-96.png') }}" alt="X aka Twitter"></a>
+        <br>
+        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/linkedin-96.png') }}" alt="linkedin"></a>
+        <br>
+        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icons8-github.gif') }}" alt="github" id="gif"></a>
+      </div>
+    </div>
+    <!-- Projects Section -->
+    <div class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <ul>
+          <li>🅱️3️⃣ 🎉 ~ Bingo Card Generator ~ 🎉🅱️3️⃣ - <a href="https://replit.com/@imdesigns/Day44100Days">View Project</a></li>
+          <li>💛 The Forgotten Locket 💛 - <a href="https://replit.com/@imdesigns/Day69100Days">View Project</a></li>
+          <li>👾 MokéBeast - Beast Battle Game 👾 - <a href="https://replit.com/@imdesigns/Day46100Days">View Project</a></li>
+          <li>⚔️ Battle Time Game ⚔️ - <a href="https://replit.com/@imdesigns/day-28100-days-of-code">View Project</a></li>
+          <li>🪢 Hangman 🪢 - <a href="https://replit.com/@imdesigns/Day39100Days">View Project</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Contact section -->
+    <div class="contact-section">
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form target="_blank">
+          <div>
+            <label>Name</label>
+            <input type="text" name="Name" required>
+            <label>Email</label>
+            <input type="email" name="Email" required>
+            <label>Message</label>
+          </div>
+          <textarea name="Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

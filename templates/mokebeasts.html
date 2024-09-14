@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}MokeBeast Game{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages.css') }}">
+<style>
+    body {
+        background-image: url("{{ url_for('static', filename='images/bkg-page.png') }}");
+        background-color: #f5f5f5;
+          font-family: 'Raleway', sans-serif;
+          line-height: 1.7em;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+  <section class="content">
+    <h1>👾 MokéBeast - The Non-Copyright Generic Beast Battle Game 👾</h1>
+    <h2>A MokeBeast Generator by Lynjai Jimenez</h2>
+    <p>This challenge is all about using dictionaries to create a game about small creatures that you have captured,
+      enslaved, and forced to fight for your amusement. You monster.
+      <br><br>
+      This game works in a completely non-copyright and totally lawyer friendly way. Pika-who? I have absolutely no idea
+      what you mean..... officer.
+    </p>
+    <img src="{{ url_for('static', filename='images/mokebeasts.png') }}" alt="intro scene" style="width: 600px;">
+
+    <p id="try">Want to make your own beast? Try here: 👾 <a href="https://replit.com/@imdesigns/Day46100Days"
+        id="link">MokeBeast Generator</a> 👾</p>
+
+    <button class="home-btn">
+      <a href="{{ url_for('portfolio') }}" id="btn-link">Go back</a>
+    </button>
+    </section>
+{% endblock %}

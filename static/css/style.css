@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #000000;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #64f2f7;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #c304c3;
+}
+
+nav ul li a:active {
+  display: inline-block;
+  color: #c304c3;
+}
+
+#link {
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#link:hover {
+  transform: scale(1.1);
+}
+
+main {
+  padding: 20px;
+}
+
+/* Home Page */
+
+.home-title {
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Faustina', serif;
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
+#profileImg {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#pText1 {
+  font-size: 22px;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-wrap: wrap;
+  color: #e925e9;
+}
+
+#pText2 {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-wrap: wrap;
+  max-width: 800px;
+  line-height: 1.5em;
+  color: whitesmoke;
+}
+
+/* Contact Section */
+.contact-content {
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  color: #e925e9;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.contact-content p {
+  font-size: 14px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+.contact-content a {
+  color: #64f2f7;
+  padding-left: 1rem;
+}
+
+.contact-content a:hover {
+  color: #e925e9;
+}

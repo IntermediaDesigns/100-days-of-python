@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.linktree-background {
+    background-image: url('../images/bkg1.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.link-tree-container {
+  background-color: rgb(97, 22, 111, 0.6);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  min-height: 650px;
+}
+
+/* Content section */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.content-info {
+  color: white;
+  text-align: center;
+  letter-spacing: .06em;
+  font-family: 'Fausina', serif;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-top: .5rem;
+}
+
+.links-container img {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  transform: scale(1);
+}
+
+.links-container img:hover {
+  transform: scale(1.1);
+}
+
+#gif {
+  border-radius: 7px;
+  width: 38px;
+  height: 38px;
+  transform: scale(1);
+}
+
+#gif:hover {
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.projects-section h2 {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: .06em;
+  font-family: 'Roboto Slab', serif;
+}
+
+.projects-container ul li {
+  color: white;
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.projects-container ul li a {
+  color: #64f2f7;
+}
+
+.projects-container ul li a:hover {
+  color: hotpink;
+}
+
+/* Contact Section */
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .3rem;
+  margin-top: 1rem;
+}
+
+.contact-form {
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: .06em;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form form label {
+  color: white;
+  margin-top: 1rem;
+  letter-spacing: .06em;
+  font-size: 14px;
+  text-align: left;
+}
+
+.contact-form form input {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  padding-left: .5rem;
+  caret-color: hotpink;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.contact-form form textarea {
+  width: 100%;
+  height: 40px;
+  margin-top: .5rem;
+  border-radius: 5px;
+  border: none;
+  padding: .5rem;
+  resize: vertical;
+  overflow: hidden;
+  font-size: 14px;
+  caret-color: hotpink;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.contact-form form textarea:focus,
+.contact-form form textarea:active {
+  overflow: auto;
+}
+
+.submit-btn {
+  color: #000;
+  background-color: #64f2f7;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .06em;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.submit-btn:hover {
+  background-color: rgb(210, 65, 236);
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
+}

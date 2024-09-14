@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Battle Game{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages.css') }}">
+<style>
+    body {
+        background-image: url("{{ url_for('static', filename='images/bkg-page.png') }}");
+        background-color: #f5f5f5;
+          font-family: 'Raleway', sans-serif;
+          line-height: 1.7em;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+  <h1>⚔️ BATTLE TIME GAME⚔️</h1>
+  <section class="content">
+    <h2>An automated game battle system by Lynjai Jimenez</h2>
+    <p>Generate two different characters and store their data (health and strength stats, character type, name, etc.).
+    </p>
+    <img src="{{ url_for('static', filename='images/battle1.png') }}" alt="generated characters" style="width: 600px;">
+    <br><br>
+    <p>
+      The winner of that round (the one who rolled the higher number) will give damage to the other character. At the
+      end
+      of each round, check the stats of each character to ensure neither of them have died yet. When one character dies
+      (they run out of health), declare a winner of the battle!
+    </p>
+    <img src="{{ url_for('static', filename='images/battle2.png') }}" alt="battle scene" style="width: 600px;">
+    <p id="try">Want to make a character? Try here: ⚔️ <a id="link"
+        href="https://replit.com/@imdesigns/day-28100-days-of-code">Battle Time
+        Game</a> ⚔️</p>
+
+    <button class="home-btn">
+      <a href="{{ url_for('portfolio') }}" id="btn-link">Go back</a>
+    </button>
+  </section>
+{% endblock %}

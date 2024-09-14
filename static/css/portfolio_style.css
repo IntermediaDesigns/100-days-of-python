@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+hr {
+  border: none;
+  border-top: 3px dotted #e925e9;
+  color: #e925e9;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  color: #64f2f7;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+/* Header Section */
+img {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#name {
+  font-family: "Faustina", serif;
+  font-size: 32px;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  line-height: 1.2em;
+  color: #64f2f7;
+  letter-spacing: 2px;
+}
+
+#title {
+  font-family: "Faustina", serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 1rem 0 0 0;
+  color: #e925e9;
+  letter-spacing: 2px;
+}
+
+#about {
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  font-size: 14px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+/* Projects Section */
+.project-content {
+  margin: 0 1rem;
+  letter-spacing: 2px;
+  color: #0fc4db;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+ol li {
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: hotpink;
+}
+
+ol p {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* Technology Section */
+.technology-content {
+  margin: 0 1rem;
+  color: #0fc4db;
+  letter-spacing: 2px;
+}
+
+.technology-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+.technology-content ul li {
+  font-size: 14px;
+}
+
+/* Contact Section */
+.contact-content {
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  color: #0fc4db;
+  letter-spacing: 2px;
+}
+
+.contact-content p {
+  font-size: 14px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+.contact-content a {
+  color: #64f2f7;
+  padding-left: 1rem;
+}
+
+.contact-content a:hover {
+  color: yellow;
+}

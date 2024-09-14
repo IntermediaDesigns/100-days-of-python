@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+    body {
+        background-image:  url("{{ url_for('static', filename='images/bkg-page.png') }}");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+    <h1 class="home-title">Welcome to My Portfolio Website</h1>
+
+<img src="{{ url_for('static', filename='images/aime3.png') }}" alt="Lynjai" id="profileImg">
+<p id="pText1">My name is Lynjai Jimenez and I am an aspiring Full Stack Web Developer.</p>
+<p id="pText2">Currently attending college to finish my Bachelors in Business Administration with a minor in Web and Digital Design. I'm a passionate learner who's always interested in expanding my horizons. I'm currently diving deep into the world of programming, learning various languages to broaden my skill set and understanding. I've been spending my time developing projects, which allows me to apply what I've learned in a practical way.</p>
+<section class="contact-content">
+    <h2>CONTACT</h2>
+    <p class="contact-info">Feel free to reach out to me via email at:<br><br> <a
+        href="mailto:intermediadesignsllc@gmail.com">intermediadesignsllc@gmail.com.</a>
+    </p>
+  </section>
+
+{% endblock %}
